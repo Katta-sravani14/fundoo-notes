@@ -13,7 +13,13 @@ import { LoginComponent } from './login/login.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 import { ForgotpasswordComponent} from './forgotpassword/forgotpassword.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { DisplayComponent } from './display/display.component';
+import { CreateNoteComponent } from './create-note/create-note.component';
+import { SidenavbarComponent } from './sidenavbar/sidenavbar.component';
+import { GetallnoteComponent } from './components/getallnote/getallnote.component';
+import { TrashComponent } from './components/trash/trash.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +27,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FundooheaderComponent,
     LoginComponent,
     ResetpasswordComponent,
-    ForgotpasswordComponent
+    ForgotpasswordComponent,
+    DashboardComponent,
+    DisplayComponent,
+    CreateNoteComponent,
+    SidenavbarComponent,
+    GetallnoteComponent,
+    TrashComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +42,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     FormsModule,
     FlexLayoutModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule 
 
   
   ],
